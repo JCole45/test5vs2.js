@@ -1,10 +1,10 @@
 readline = require('readline-sync')
 
-  var set = [];
-var size = 5;
-for(var i=0; i<size; i++) {
+  const set = [];
+const size = 5;
+for(let i=0; i<size; i++) {
 
-	set[i] = readline.question('Enter Element ' + (i+1)); //fill the array 'set' with input from user
+	set[i] = readline.question('Enter Element ' + (i+1) + ':'); //fill the array 'set' with input from user
 }
 function barFive (b) {
 b = b % 5  ;

@@ -1,19 +1,19 @@
 readline= require('readline-sync')
 
 
-var count= 0;
+let count= 0;
 function charCount2 (string1,string2){
-  string1 = readline.question("type first word")
-  string2 = readline.question("type second word")
+  string1 = readline.question("type first word: ")
+  string2 = readline.question("type second word: ")
 
-var i = -1;
-var j=  string1.length
-var k=  string2.length
+let i = -1;
+let j=  string1.length
+let k=  string2.length
 //console.log(j)
 //console.log(k)
 
 
-  for (var j; j<= string2.length; j++)
+  for ( j; j<= string2.length; j++)
   {
     i++;
 
