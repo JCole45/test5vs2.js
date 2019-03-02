@@ -27,6 +27,13 @@ handlePassChange = (d) => {
   });
 }
 
+handleSubmitChange = (c) => {
+
+    alert("Username is " + this.state.username);
+    c.preventDefault();
+  };
+
+
   render() {
     return (
 
@@ -67,7 +74,7 @@ handlePassChange = (d) => {
 <br/>
 
     <div id="button">
-     <input type="submit" value="Sign In" /><br/>
+     <input type="submit" value="Sign In" onClick= {this.handleSubmitChange}/><br/>
     </div>
 
  </form>
